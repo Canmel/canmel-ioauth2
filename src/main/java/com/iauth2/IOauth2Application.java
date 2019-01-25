@@ -19,6 +19,6 @@ public class IOauth2Application implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-        logger.info("IAUTH2项目启动完成");
+        logger.info("IAUTH2 项目启动完成");
     }
 }
