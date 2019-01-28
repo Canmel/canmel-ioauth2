@@ -25,6 +25,7 @@ if [ "$RUN_CONTEXT" = "dev" ]; then
     #启动rails
     #echo `bundle exec rails s -b 0.0.0.0 -p 3000`
     #passenger start --environment development --port 3000
+    pwd
     nohup java -jar /root/app/target/ioauth2-1.0-SNAPSHOT.jar &
 #预发布环境
 elif [ "$RUN_CONTEXT" = "pre_prod" ]; then
