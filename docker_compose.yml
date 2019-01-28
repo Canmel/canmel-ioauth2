@@ -3,6 +3,6 @@ web:
   restart: always
   ports:
   - '22'
-  - '9999'
+  - '9999:9999'
 #  volumes:
 #  - /apps/fbms/rails_log:/rails_app/log
