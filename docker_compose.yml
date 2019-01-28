@@ -1,0 +1,8 @@
+web:
+  image: daocloud.io/meedesidy/meedesidy:master-ead185a
+  restart: always
+  ports:
+  - '22'
+  - '80'
+#  volumes:
+#  - /apps/fbms/rails_log:/rails_app/log
