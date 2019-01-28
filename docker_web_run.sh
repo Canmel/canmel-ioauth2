@@ -12,6 +12,7 @@ source ~/.bashrc
 
 #开发环境
 if [ "$RUN_CONTEXT" = "dev" ]; then
+    pwd
     #设置ssh密码
 #    echo "root:123456" | chpasswd
     #启动sshd
