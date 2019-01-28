@@ -4,5 +4,6 @@ web:
   ports:
   - '22'
   - '9999:9999'
+  tty: true
 #  volumes:
 #  - /apps/fbms/rails_log:/rails_app/log
