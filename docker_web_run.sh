@@ -28,7 +28,7 @@ if [ "$RUN_CONTEXT" = "dev" ]; then
     #passenger start --environment development --port 3000
     echo pwd
     nohup java -jar /root/app/target/ioauth2-1.0-SNAPSHOT.jar &
-    echo "2111111111111111"
+    /bin/bash
 #预发布环境
 elif [ "$RUN_CONTEXT" = "pre_prod" ]; then
     echo "root:POloXM1980!@&" | chpasswd
