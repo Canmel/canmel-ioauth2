@@ -1,8 +1,8 @@
 web:
-  image: daocloud.io/meedesidy/meedesidy:master-ead185a
+  image: 172.17.32.114:1180/canmel/ioauth2:latest
   restart: always
   ports:
   - '22'
-  - '80'
+  - '9000'
 #  volumes:
 #  - /apps/fbms/rails_log:/rails_app/log
