@@ -13,19 +13,19 @@ source ~/.bashrc
 #开发环境
 if [ "$RUN_CONTEXT" = "dev" ]; then
     #设置ssh密码
-    echo "root:123456" | chpasswd
+#    echo "root:123456" | chpasswd
     #启动sshd
-    /usr/sbin/sshd
+#    /usr/sbin/sshd
     #启动cron
-    /etc/init.d/cron start
+#    /etc/init.d/cron start
     #执行rake任务
-    bundle exec rake db:migrate
+#    bundle exec rake db:migrate
     #开启rails定时任务
     #whenever -w
     #启动rails
     #echo `bundle exec rails s -b 0.0.0.0 -p 3000`
     #passenger start --environment development --port 3000
-
+    nohup java -jar /root/app/target/ioauth2-1.0-SNAPSHOT.jar &
 #预发布环境
 elif [ "$RUN_CONTEXT" = "pre_prod" ]; then
     echo "root:POloXM1980!@&" | chpasswd
